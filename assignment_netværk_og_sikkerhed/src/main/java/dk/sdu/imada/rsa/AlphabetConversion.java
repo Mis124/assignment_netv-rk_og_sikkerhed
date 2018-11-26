@@ -2,6 +2,7 @@ package dk.sdu.imada.rsa;
 
 import java.math.BigInteger;
 
+
 public class AlphabetConversion {
 
 	/**
@@ -11,9 +12,17 @@ public class AlphabetConversion {
 	 */
 	private static BigInteger charToNumber(char c) {
 		// TODO Implementation needed
-
-		return null;
+		int num = (int) c;
+		num = num - 96;
+		if (num <= 0 || num >= 27) {
+			return new BigInteger("0");
+		}else{
+			String fin = " ";
+			fin = fin + num;
+			return new BigInteger(fin);
+		}
 	}
+
 
 	/**
 	 * Converts a number in the interval [0:26] to the corresponding char
@@ -22,8 +31,14 @@ public class AlphabetConversion {
 	 */
 	private static char numberToChar(BigInteger number) {
 		// TODO Implementation needed
-
-		return '?';
+		int num = number.intValue();
+		if (num == 0){
+		 	num = num + 32;
+			return Character.toString ((char) num);
+		}else{
+			num = num + 96;
+			return Character.toString ((char) num);
+		}
 	}
 
 
