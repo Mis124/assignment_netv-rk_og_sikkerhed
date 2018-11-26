@@ -53,20 +53,16 @@ public class AlphabetConversion {
                  BigInteger finNum = new BigInteger("0");
                  BigInteger op = new BigInteger("27");
                  String done = "";
-
                  for(int i=4; i>=0;i--){
                      finNum = number.divide(op.pow(i));
                      if (finNum.compareTo(new BigInteger("0")) == 0){
-
                          done+=" ";
                      }else{
                          number = number.subtract(finNum.multiply(op.pow(i)));
                          char holder = (char)(finNum.intValueExact()+96);
                          done += holder;
                      }
-
                  }
-
  		return done;
  	}
 
@@ -76,19 +72,22 @@ public class AlphabetConversion {
 	 * @return The converted number
 	 */
 	 public static BigInteger stringToNumber(String string) {
-	             // TODO Implementation needed
-	             BigInteger finNum = new BigInteger("0");
-	             BigInteger op = new BigInteger("27");
-	             while(string.length() < 5){
-	                 string = string + " ";
-	             }
-	             char[] charArr = string.toCharArray();
-	             for(int i=0; i<5; i++){
-	                 finNum = finNum.add(charToNumber(charArr[i]).multiply(op.pow(4-i)));
+            // TODO Implementation needed
+            BigInteger finNum = new BigInteger("0");
+            final BigInteger op = new BigInteger("27");
+            while(string.length() < 5){
+                string = string + " ";
+            }
+            //System.out.println("fancy String " +string +"|");
+            char[] charArr = string.toCharArray();
 
-	             }
-	             return finNum;
-	 	}
+            for(int i=0; i<5; i++){
+                finNum = finNum.add(charToNumber(charArr[i]).multiply(op.pow(4-i)));
+            }
+            //System.out.println("StringToNumber: " + finNum);
+
+            return finNum;
+	}
 
 
 

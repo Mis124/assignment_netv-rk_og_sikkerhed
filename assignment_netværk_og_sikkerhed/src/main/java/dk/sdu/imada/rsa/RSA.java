@@ -76,21 +76,25 @@ public class RSA {
      * @return The encrypted message
      */
      public String encryptMessage(String plaintext) {
-      // TODO Implementation needed
-      ArrayList<String> fin = new ArrayList();
-      String encr = "";
-      while(plaintext.length() >= 5){
-           fin.add(plaintext.substring(0, 5));
-           plaintext = plaintext.substring(5, plaintext.length());
-      }
-      fin.add(plaintext);
-      for(String s : fin) {
-            encr = encr + (AlphabetConversion.stringToNumber(s)).modPow(e, n).toString() + "\n";
+        // TODO Implementation needed
 
-      }
+        ArrayList<String> fin = new ArrayList();
+        String encr = "";
+        while(plaintext.length() >= 5){
+            fin.add(plaintext.substring(0, 5));
+            plaintext = plaintext.substring(5, plaintext.length());
+        }
+        fin.add(plaintext);
+        for(String s : fin) {
 
-      return encr;
-   }
+            BigInteger m = AlphabetConversion.stringToNumber(s);
+   
+            BigInteger c = m.modPow(e, n);
+
+            encr = encr + c.toString() + "\n";
+        }
+        return encr;
+    }
 
     /**
      * Decrypt using the private key. The ciphertext has a block of encrypted text on each line.
@@ -100,13 +104,16 @@ public class RSA {
      public String decrypt(String cipherText) {
         // TODO Implementation needed
         String dicr = "";
-        String[] fin =cipherText.split("\n");
+        String[] fin = cipherText.split("\n");
 
         for(String s : fin) {
-             BigInteger temp = new BigInteger(s);
-             BigInteger m = temp.modPow(d, n);
+
+             BigInteger c = new BigInteger(s);
+
+             BigInteger m = c.modPow(d, n);
 
              dicr = dicr + AlphabetConversion.numberToString(m);
+
         }
 
         return dicr;
