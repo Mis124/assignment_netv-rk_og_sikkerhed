@@ -34,10 +34,10 @@ public class AlphabetConversion {
 		int num = number.intValue();
 		if (num == 0){
 		 	num = num + 32;
-			return Character.toString ((char) num);
+			return ((char) num);
 		}else{
 			num = num + 96;
-			return Character.toString ((char) num);
+			return ((char) num);
 		}
 	}
 
