@@ -1,133 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dk.sdu.imada.rsa.RSASpec" tests="16" skipped="0" failures="16" errors="0" timestamp="2018-11-26T09:31:46" hostname="DESKTOP-GLQNHV9" time="0.415">
+<testsuite name="dk.sdu.imada.rsa.RSASpec" tests="16" skipped="0" failures="13" errors="0" timestamp="2018-11-26T14:06:06" hostname="DESKTOP-GLQNHV9" time="0.507">
   <properties/>
-  <testcase name="Test d is correct set when values are given RSA(13,17,5) =&gt; d=77" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test d is correct set when values are given RSA(13,17,#chosenE) =&gt; d=#d(RSASpec.groovy:10)
+  <testcase name="Test d is correct set when values are given RSA(13,17,5) =&gt; d=77" classname="dk.sdu.imada.rsa.RSASpec" time="0.006"/>
+  <testcase name="Test d is correct set when values are given RSA(13,17,7) =&gt; d=55" classname="dk.sdu.imada.rsa.RSASpec" time="0.0"/>
+  <testcase name="Test d is correct set when values are given RSA(13,17,11) =&gt; d=35" classname="dk.sdu.imada.rsa.RSASpec" time="0.0"/>
+  <testcase name="Test encryption only with small example '    a'=&gt;'1&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.003">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.encryptMessage(text) == result&#10;|   |              |     |  |&#10;|   null               a |  1&#10;|                        false&#10;&lt;dk.sdu.imada.rsa.RSA@4814177d random=java.util.Random@b0634b6 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.encryptMessage(text) == result
+|   |              |     |  |
+|   null               a |  1
+|                        false
+&lt;dk.sdu.imada.rsa.RSA@4814177d random=java.util.Random@b0634b6 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:28)
 </failure>
   </testcase>
-  <testcase name="Test d is correct set when values are given RSA(13,17,7) =&gt; d=55" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test d is correct set when values are given RSA(13,17,#chosenE) =&gt; d=#d(RSASpec.groovy:10)
+  <testcase name="Test encryption only with small example '    b'=&gt;'32&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.004">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.encryptMessage(text) == result&#10;|   |              |     |  |&#10;|   null               b |  32&#10;|                        false&#10;&lt;dk.sdu.imada.rsa.RSA@76d6bb19 random=java.util.Random@34553e33 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.encryptMessage(text) == result
+|   |              |     |  |
+|   null               b |  32
+|                        false
+&lt;dk.sdu.imada.rsa.RSA@76d6bb19 random=java.util.Random@34553e33 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:28)
 </failure>
   </testcase>
-  <testcase name="Test d is correct set when values are given RSA(13,17,11) =&gt; d=35" classname="dk.sdu.imada.rsa.RSASpec" time="0.004">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test d is correct set when values are given RSA(13,17,#chosenE) =&gt; d=#d(RSASpec.groovy:10)
+  <testcase name="Test encryption only with small example '    c'=&gt;'22&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.005">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.encryptMessage(text) == result&#10;|   |              |     |  |&#10;|   null               c |  22&#10;|                        false&#10;&lt;dk.sdu.imada.rsa.RSA@26981d2 random=java.util.Random@6b82a533 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.encryptMessage(text) == result
+|   |              |     |  |
+|   null               c |  22
+|                        false
+&lt;dk.sdu.imada.rsa.RSA@26981d2 random=java.util.Random@6b82a533 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:28)
 </failure>
   </testcase>
-  <testcase name="Test encryption only with small example '    a'=&gt;'1&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.002">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+  <testcase name="Test encryption only with small example '    d'=&gt;'140&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.encryptMessage(text) == result&#10;|   |              |     |  |&#10;|   null               d |  140&#10;|                        false&#10;&lt;dk.sdu.imada.rsa.RSA@107e3b25 random=java.util.Random@7787bd89 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.encryptMessage(text) == result
+|   |              |     |  |
+|   null               d |  140
+|                        false
+&lt;dk.sdu.imada.rsa.RSA@107e3b25 random=java.util.Random@7787bd89 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:28)
 </failure>
   </testcase>
-  <testcase name="Test encryption only with small example '    b'=&gt;'32&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+  <testcase name="Test encryption only with small example '    z'=&gt;'195&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.008">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.encryptMessage(text) == result&#10;|   |              |     |  |&#10;|   null               z |  195&#10;|                        false&#10;&lt;dk.sdu.imada.rsa.RSA@34cb3da1 random=java.util.Random@1df38c71 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.encryptMessage(text) == result
+|   |              |     |  |
+|   null               z |  195
+|                        false
+&lt;dk.sdu.imada.rsa.RSA@34cb3da1 random=java.util.Random@1df38c71 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:28)
 </failure>
   </testcase>
-  <testcase name="Test encryption only with small example '    c'=&gt;'22&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+  <testcase name="Test encryption only with small example '    f    g'=&gt;'41&#10;11&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.008">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.encryptMessage(text) == result&#10;|   |              |     |  |&#10;|   null           |     |  41&#10;|                  |     |  11&#10;|                  |     false&#10;|                      f    g&#10;&lt;dk.sdu.imada.rsa.RSA@57b32f01 random=java.util.Random@74fd8c84 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.encryptMessage(text) == result
+|   |              |     |  |
+|   null           |     |  41
+|                  |     |  11
+|                  |     false
+|                      f    g
+&lt;dk.sdu.imada.rsa.RSA@57b32f01 random=java.util.Random@74fd8c84 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:28)
 </failure>
   </testcase>
-  <testcase name="Test encryption only with small example '    d'=&gt;'140&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+  <testcase name="Test decryption only with small example '1&#10;' =&gt; '    a'" classname="dk.sdu.imada.rsa.RSASpec" time="0.002">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.decrypt(text) == result&#10;|   |       |     |  |&#10;|   null    1&#10;    |      a&#10;|                 false&#10;&lt;dk.sdu.imada.rsa.RSA@5918567a random=java.util.Random@7035a876 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.decrypt(text) == result
+|   |       |     |  |
+|   null    1
+    |      a
+|                 false
+&lt;dk.sdu.imada.rsa.RSA@5918567a random=java.util.Random@7035a876 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:46)
 </failure>
   </testcase>
-  <testcase name="Test encryption only with small example '    z'=&gt;'195&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+  <testcase name="Test decryption only with small example '32&#10;' =&gt; '    b'" classname="dk.sdu.imada.rsa.RSASpec" time="0.006">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.decrypt(text) == result&#10;|   |       |     |  |&#10;|   null    32&#10;   |      b&#10;|                 false&#10;&lt;dk.sdu.imada.rsa.RSA@4c356438 random=java.util.Random@57b545a2 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.decrypt(text) == result
+|   |       |     |  |
+|   null    32
+   |      b
+|                 false
+&lt;dk.sdu.imada.rsa.RSA@4c356438 random=java.util.Random@57b545a2 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:46)
 </failure>
   </testcase>
-  <testcase name="Test encryption only with small example '    f    g'=&gt;'41&#10;11&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
-</failure>
-  </testcase>
-  <testcase name="Test decryption only with small example '1&#10;' =&gt; '    a'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
-</failure>
-  </testcase>
-  <testcase name="Test decryption only with small example '32&#10;' =&gt; '    b'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
-</failure>
-  </testcase>
-  <testcase name="Test decryption only with small example '22&#10;' =&gt; '    c'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+  <testcase name="Test decryption only with small example '22&#10;' =&gt; '    c'" classname="dk.sdu.imada.rsa.RSASpec" time="0.002">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.decrypt(text) == result&#10;|   |       |     |  |&#10;|   null    22&#10;   |      c&#10;|                 false&#10;&lt;dk.sdu.imada.rsa.RSA@7b7cfa04 random=java.util.Random@59a31c1b primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.decrypt(text) == result
+|   |       |     |  |
+|   null    22
+   |      c
+|                 false
+&lt;dk.sdu.imada.rsa.RSA@7b7cfa04 random=java.util.Random@59a31c1b primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:46)
 </failure>
   </testcase>
   <testcase name="Test decryption only with small example '140&#10;' =&gt; '    d'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+    <failure message="Condition not satisfied:&#10;&#10;rsa.decrypt(text) == result&#10;|   |       |     |  |&#10;|   null    140&#10;  |      d&#10;|                 false&#10;&lt;dk.sdu.imada.rsa.RSA@7bdd69ed random=java.util.Random@6339283d primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.decrypt(text) == result
+|   |       |     |  |
+|   null    140
+  |      d
+|                 false
+&lt;dk.sdu.imada.rsa.RSA@7bdd69ed random=java.util.Random@6339283d primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:46)
 </failure>
   </testcase>
-  <testcase name="Test decryption only with small example '195&#10;' =&gt; '    z'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+  <testcase name="Test decryption only with small example '195&#10;' =&gt; '    z'" classname="dk.sdu.imada.rsa.RSASpec" time="0.002">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.decrypt(text) == result&#10;|   |       |     |  |&#10;|   null    195&#10;  |      z&#10;|                 false&#10;&lt;dk.sdu.imada.rsa.RSA@1dbf2252 random=java.util.Random@27e571ab primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.decrypt(text) == result
+|   |       |     |  |
+|   null    195
+  |      z
+|                 false
+&lt;dk.sdu.imada.rsa.RSA@1dbf2252 random=java.util.Random@27e571ab primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:46)
 </failure>
   </testcase>
-  <testcase name="Test decryption only with small example '41&#10;11&#10;' =&gt; '    f    g'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
-	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+  <testcase name="Test decryption only with small example '41&#10;11&#10;' =&gt; '    f    g'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="Condition not satisfied:&#10;&#10;rsa.decrypt(text) == result&#10;|   |       |     |  |&#10;|   null    |     |      f    g&#10;|           |     false&#10;|           41&#10;|           11&#10;&lt;dk.sdu.imada.rsa.RSA@688a8f56 random=java.util.Random@1e584e44 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+rsa.decrypt(text) == result
+|   |       |     |  |
+|   null    |     |      f    g
+|           |     false
+|           41
+|           11
+&lt;dk.sdu.imada.rsa.RSA@688a8f56 random=java.util.Random@1e584e44 primeOne=13 primeTwo=17 n=221 e=5 d=77 z=192&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:46)
 </failure>
   </testcase>
-  <testcase name="Test encryption and decryption" classname="dk.sdu.imada.rsa.RSASpec" time="0.388">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
-	at dk.sdu.imada.rsa.RSA.selectE(RSA.java:58)
-	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:42)
-	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:22)
-	at dk.sdu.imada.rsa.RSASpec.Test encryption and decryption(RSASpec.groovy:62)
+  <testcase name="Test encryption and decryption" classname="dk.sdu.imada.rsa.RSASpec" time="0.447">
+    <failure message="Condition failed with Exception:&#10;&#10;rsa.decrypt(ciphertext).startsWith(text)&#10;|   |       |           |          |&#10;|   null    null        |          this is a hello world encrypted message&#10;|                       java.lang.NullPointerException: Cannot invoke method startsWith() on null object&#10;&lt;dk.sdu.imada.rsa.RSA@1dc1199d random=java.util.Random@14be8edd primeOne=9025931916119664375170723778841831289043450830040395128167477163706294530668960882909128852511198190285948442550293997475520497542673393908509873081815154570708630015403766650232578831632523876220752566162688602835657507701876865859429703977490907503306915331464013207634471568535378156091119122930077 primeTwo=8017119322034584001987568796106728754681740826379932854252916946958984739740014783616700234134902716967163817003818661988371667418987929548211075771533440983376796598102834846160528506919599528085739158387310409987171104706078850898496917925592094653004500950092978554584552740069638086675117172781147 n=72361973164091597373663009761091865507753680772939888083000951376033301042975697453590025458435173065239253910535189350929901748736828451148685263771420908651854874905707503328030297792075459489839571343752926657740823344147995568229368650490051317115226790819282529994852145063291833021809706932546304903377478756891668833241154096939355990882303100622677421462986429341441591968641035643544101766304964136808470274497649514877433141569087587637393971061189908100011541780164615518087301295588797569354338046517843431625883178062462522128726947596124161034322513788279361117345231196405367501704858319 e=14296824987498886217961820937488290097306480555739049767032750681025962769972453326324778439048104659 d=2385172562348556985782600960654938908320111737801876431418805386135664405157624941997539929748397846818425463245739289934258196743767365054714006239966000543756866099790669606181255958158390127111086904317990754734157803208259273545986107791223702821867814508906177191199729085494286803098384627964433666003402970001273584842170158212670444860101170285789016464635724584644657693125284803658371120139994826524300819891544924773973270109857627634439120960568977992440711990811937849028564022714083783558559075061254064601776739884625097122124283293185452982811521024367183782223655289389985586218417979 z=72361973164091597373663009761091865507753680772939888083000951376033301042975697453590025458435173065239253910535189350929901748736828451148685263771420908651854874905707503328030297792075459489839571343752926657740823344147995568229368650490051317115226790819282529994852145063291833021809706932546287860326240602643291674948579148379312265690646680294695001068875764062171182992974509814457455665397711024548916161838185622712471480245630866688540622465635822673398035178668222410748749172184491077629788047505020603013475222345704595506823864593967849618040956796517142093036626180162601265409147096&gt;&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError">Condition failed with Exception:
+
+rsa.decrypt(ciphertext).startsWith(text)
+|   |       |           |          |
+|   null    null        |          this is a hello world encrypted message
+|                       java.lang.NullPointerException: Cannot invoke method startsWith() on null object
+&lt;dk.sdu.imada.rsa.RSA@1dc1199d random=java.util.Random@14be8edd primeOne=9025931916119664375170723778841831289043450830040395128167477163706294530668960882909128852511198190285948442550293997475520497542673393908509873081815154570708630015403766650232578831632523876220752566162688602835657507701876865859429703977490907503306915331464013207634471568535378156091119122930077 primeTwo=8017119322034584001987568796106728754681740826379932854252916946958984739740014783616700234134902716967163817003818661988371667418987929548211075771533440983376796598102834846160528506919599528085739158387310409987171104706078850898496917925592094653004500950092978554584552740069638086675117172781147 n=72361973164091597373663009761091865507753680772939888083000951376033301042975697453590025458435173065239253910535189350929901748736828451148685263771420908651854874905707503328030297792075459489839571343752926657740823344147995568229368650490051317115226790819282529994852145063291833021809706932546304903377478756891668833241154096939355990882303100622677421462986429341441591968641035643544101766304964136808470274497649514877433141569087587637393971061189908100011541780164615518087301295588797569354338046517843431625883178062462522128726947596124161034322513788279361117345231196405367501704858319 e=14296824987498886217961820937488290097306480555739049767032750681025962769972453326324778439048104659 d=2385172562348556985782600960654938908320111737801876431418805386135664405157624941997539929748397846818425463245739289934258196743767365054714006239966000543756866099790669606181255958158390127111086904317990754734157803208259273545986107791223702821867814508906177191199729085494286803098384627964433666003402970001273584842170158212670444860101170285789016464635724584644657693125284803658371120139994826524300819891544924773973270109857627634439120960568977992440711990811937849028564022714083783558559075061254064601776739884625097122124283293185452982811521024367183782223655289389985586218417979 z=72361973164091597373663009761091865507753680772939888083000951376033301042975697453590025458435173065239253910535189350929901748736828451148685263771420908651854874905707503328030297792075459489839571343752926657740823344147995568229368650490051317115226790819282529994852145063291833021809706932546287860326240602643291674948579148379312265690646680294695001068875764062171182992974509814457455665397711024548916161838185622712471480245630866688540622465635822673398035178668222410748749172184491077629788047505020603013475222345704595506823864593967849618040956796517142093036626180162601265409147096&gt;
+
+	at dk.sdu.imada.rsa.RSASpec.Test encryption and decryption(RSASpec.groovy:69)
+Caused by: java.lang.NullPointerException: Cannot invoke method startsWith() on null object
+	... 1 more
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
