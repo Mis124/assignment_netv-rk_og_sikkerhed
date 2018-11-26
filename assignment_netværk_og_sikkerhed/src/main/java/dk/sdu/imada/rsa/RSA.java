@@ -75,18 +75,40 @@ public class RSA {
      * @param plaintext The text to encrypt
      * @return The encrypted message
      */
-    public String encryptMessage(String plaintext) {
-        // TODO Implementation needed
-        return null;
-    }
+     public String encryptMessage(String plaintext) {
+      // TODO Implementation needed
+      ArrayList<String> fin = new ArrayList();
+      String encr = "";
+      while(plaintext.length() >= 5){
+           fin.add(plaintext.substring(0, 5));
+           plaintext = plaintext.substring(5, plaintext.length());
+      }
+      fin.add(plaintext);
+      for(String s : fin) {
+            encr = encr + (AlphabetConversion.stringToNumber(s)).modPow(e, n).toString() + "\n";
+
+      }
+
+      return encr;
+   }
 
     /**
      * Decrypt using the private key. The ciphertext has a block of encrypted text on each line.
      * @param cipherText Encrypted text to decrypt
      * @return Decrypted plaintext message
      */
-    public String decrypt(String cipherText) {
+     public String decrypt(String cipherText) {
         // TODO Implementation needed
-        return null;
+        String dicr = "";
+        String[] fin =cipherText.split("\n");
+
+        for(String s : fin) {
+             BigInteger temp = new BigInteger(s);
+             BigInteger m = temp.modPow(d, n);
+
+             dicr = dicr + AlphabetConversion.numberToString(m);
+        }
+
+        return dicr;
     }
 }

@@ -64,7 +64,7 @@ public class AlphabetConversion {
                          char holder = (char)(finNum.intValueExact()+96);
                          done += holder;
                      }
-                     System.out.println(done);
+
                  }
 
  		return done;
@@ -82,11 +82,10 @@ public class AlphabetConversion {
 	             while(string.length() < 5){
 	                 string = string + " ";
 	             }
-	             System.out.println(string);
 	             char[] charArr = string.toCharArray();
 	             for(int i=0; i<5; i++){
 	                 finNum = finNum.add(charToNumber(charArr[i]).multiply(op.pow(4-i)));
-	                 System.out.println(finNum);
+
 	             }
 	             return finNum;
 	 	}

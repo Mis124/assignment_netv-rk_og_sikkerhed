@@ -1,47 +1,27 @@
-t
-th
-thi
-this
-this 
- 
-  
-   
-    
-     
-n
-ne
-net
-netw
-netwo
-     
-0
-0
-0
-0
-0
-this 
-
-10628820
-
-10786284
-
-10792845
-
-10793358
-
-10793358
-netwo
-	7440174
-	7538589
-	7553169
-	7553790
-	7553805
-7gcd(123456544 , 9955487) is [1 , -2283680 , 28319583]
-2So -2283680 * 123456544 + 28319583 * 9955487 = 1
-r = 1
-s = -2283680
-t = 28319583
-LThe encrypted message for 'what a lovely little coding exercise this is' is
-null
-The ciphertext decrypted is:
-null
+7gcd(123456544 , 9955487) is [1 , -2283680 , 28319583]
+2So -2283680 * 123456544 + 28319583 * 9955487 = 1
+r = 1
+s = -2283680
+t = 28319583
+LThe encrypted message for 'what a lovely little coding exercise this is' is
+null
+The ciphertext decrypted is:
+null
+t
+th
+thi
+this
+this 
+ 
+  
+   
+    
+     
+n
+ne
+net
+netw
+netwo
+     
+this 
+netwo
