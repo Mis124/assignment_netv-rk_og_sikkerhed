@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class dk.sdu.imada.rsa.AlphabetConversionSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class dk.sdu.imada.rsa.AlphabetConversionSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/dk.sdu.imada.rsa.html">dk.sdu.imada.rsa</a> &gt; AlphabetConversionSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">16</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">11</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.307s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">31%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Check charToNumber converts correctly 'a' =&gt; 1"></a>
+<h3 class="failures">Check charToNumber converts correctly 'a' =&gt; 1</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+AlphabetConversion.charToNumber( input.charAt(0) ) == output
+                   |             |     |
+                   |             a     a
+                   java.lang.NumberFormatException: For input string: &quot; 1&quot;
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check charToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:36)
+Caused by: java.lang.NumberFormatException: For input string: &quot; 1&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:470)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:606)
+	at dk.sdu.imada.rsa.AlphabetConversion.charToNumber(AlphabetConversion.java:22)
+	... 1 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check charToNumber converts correctly 'b' =&gt; 2"></a>
+<h3 class="failures">Check charToNumber converts correctly 'b' =&gt; 2</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+AlphabetConversion.charToNumber( input.charAt(0) ) == output
+                   |             |     |
+                   |             b     b
+                   java.lang.NumberFormatException: For input string: &quot; 2&quot;
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check charToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:36)
+Caused by: java.lang.NumberFormatException: For input string: &quot; 2&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:470)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:606)
+	at dk.sdu.imada.rsa.AlphabetConversion.charToNumber(AlphabetConversion.java:22)
+	... 1 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check charToNumber converts correctly 'z' =&gt; 26"></a>
+<h3 class="failures">Check charToNumber converts correctly 'z' =&gt; 26</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+AlphabetConversion.charToNumber( input.charAt(0) ) == output
+                   |             |     |
+                   |             z     z
+                   java.lang.NumberFormatException: For input string: &quot; 26&quot;
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check charToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:36)
+Caused by: java.lang.NumberFormatException: For input string: &quot; 26&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:470)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:606)
+	at dk.sdu.imada.rsa.AlphabetConversion.charToNumber(AlphabetConversion.java:22)
+	... 1 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check that numberToString converts correctly '0' =&gt; '     '"></a>
+<h3 class="failures">Check that numberToString converts correctly '0' =&gt; '     '</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+AlphabetConversion.numberToString(new BigInteger(input) ) == output
+                   |              |              |        |  |
+                   null           0              0        |       
+                                                          false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that numberToString converts correctly '#input' =&gt; '#output'(AlphabetConversionSpec.groovy:10)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check that numberToString converts correctly '10793358' =&gt; 'this '"></a>
+<h3 class="failures">Check that numberToString converts correctly '10793358' =&gt; 'this '</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+AlphabetConversion.numberToString(new BigInteger(input) ) == output
+                   |              |              |        |  |
+                   null           10793358       10793358 |  this 
+                                                          false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that numberToString converts correctly '#input' =&gt; '#output'(AlphabetConversionSpec.groovy:10)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check that numberToString converts correctly '7553805' =&gt; 'netwo'"></a>
+<h3 class="failures">Check that numberToString converts correctly '7553805' =&gt; 'netwo'</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+AlphabetConversion.numberToString(new BigInteger(input) ) == output
+                   |              |              |        |  |
+                   null           7553805        7553805  |  netwo
+                                                          false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that numberToString converts correctly '#input' =&gt; '#output'(AlphabetConversionSpec.groovy:10)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check that stringToNumber converts correctly '     ' =&gt; 0"></a>
+<h3 class="failures">Check that stringToNumber converts correctly '     ' =&gt; 0</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+AlphabetConversion.stringToNumber( input ) == output
+                   |               |       |  |
+                   null                    |  0
+                                           false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that stringToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:23)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check that stringToNumber converts correctly 'netwo' =&gt; 7553805"></a>
+<h3 class="failures">Check that stringToNumber converts correctly 'netwo' =&gt; 7553805</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+AlphabetConversion.stringToNumber( input ) == output
+                   |               |       |  |
+                   null            netwo   |  7553805
+                                           false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that stringToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:23)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Check that stringToNumber converts correctly 'this ' =&gt; 10793358"></a>
+<h3 class="failures">Check that stringToNumber converts correctly 'this ' =&gt; 10793358</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+AlphabetConversion.stringToNumber( input ) == output
+                   |               |       |  |
+                   null            this    |  10793358
+                                           false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that stringToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:23)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test numberToChar throws exeption for erroneous input: -1"></a>
+<h3 class="failures">Test numberToChar throws exeption for erroneous input: -1</h3>
+<span class="code">
+<pre>Expected exception of type 'java.lang.IllegalArgumentException', but no exception was thrown
+	at org.spockframework.lang.SpecInternals.checkExceptionThrown(SpecInternals.java:80)
+	at org.spockframework.lang.SpecInternals.thrownImpl(SpecInternals.java:67)
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Test numberToChar throws exeption for erroneous input: #input(AlphabetConversionSpec.groovy:65)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test numberToChar throws exeption for erroneous input: 27"></a>
+<h3 class="failures">Test numberToChar throws exeption for erroneous input: 27</h3>
+<span class="code">
+<pre>Expected exception of type 'java.lang.IllegalArgumentException', but no exception was thrown
+	at org.spockframework.lang.SpecInternals.checkExceptionThrown(SpecInternals.java:80)
+	at org.spockframework.lang.SpecInternals.thrownImpl(SpecInternals.java:67)
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Test numberToChar throws exeption for erroneous input: #input(AlphabetConversionSpec.groovy:65)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Check charToNumber converts correctly ' ' =&gt; 0</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Check charToNumber converts correctly '$' =&gt; 0</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Check charToNumber converts correctly 'a' =&gt; 1</td>
+<td class="failures">0.011s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check charToNumber converts correctly 'b' =&gt; 2</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check charToNumber converts correctly 'z' =&gt; 26</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Check numberToChar converts correctly '0' =&gt; ' '</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Check numberToChar converts correctly '1' =&gt; 'a'</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Check numberToChar converts correctly '26' =&gt; 'z'</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Check that numberToString converts correctly '0' =&gt; '     '</td>
+<td class="failures">0.003s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check that numberToString converts correctly '10793358' =&gt; 'this '</td>
+<td class="failures">0.218s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check that numberToString converts correctly '7553805' =&gt; 'netwo'</td>
+<td class="failures">0.002s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check that stringToNumber converts correctly '     ' =&gt; 0</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check that stringToNumber converts correctly 'netwo' =&gt; 7553805</td>
+<td class="failures">0.010s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Check that stringToNumber converts correctly 'this ' =&gt; 10793358</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test numberToChar throws exeption for erroneous input: -1</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test numberToChar throws exeption for erroneous input: 27</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 26-11-2018 10:31:47</p>
+</div>
+</div>
+</body>
+</html>

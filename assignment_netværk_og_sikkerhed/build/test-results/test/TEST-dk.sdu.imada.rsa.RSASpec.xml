@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dk.sdu.imada.rsa.RSASpec" tests="16" skipped="0" failures="16" errors="0" timestamp="2018-11-26T09:31:46" hostname="DESKTOP-GLQNHV9" time="0.415">
+  <properties/>
+  <testcase name="Test d is correct set when values are given RSA(13,17,5) =&gt; d=77" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test d is correct set when values are given RSA(13,17,#chosenE) =&gt; d=#d(RSASpec.groovy:10)
+</failure>
+  </testcase>
+  <testcase name="Test d is correct set when values are given RSA(13,17,7) =&gt; d=55" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test d is correct set when values are given RSA(13,17,#chosenE) =&gt; d=#d(RSASpec.groovy:10)
+</failure>
+  </testcase>
+  <testcase name="Test d is correct set when values are given RSA(13,17,11) =&gt; d=35" classname="dk.sdu.imada.rsa.RSASpec" time="0.004">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test d is correct set when values are given RSA(13,17,#chosenE) =&gt; d=#d(RSASpec.groovy:10)
+</failure>
+  </testcase>
+  <testcase name="Test encryption only with small example '    a'=&gt;'1&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.002">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase name="Test encryption only with small example '    b'=&gt;'32&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase name="Test encryption only with small example '    c'=&gt;'22&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase name="Test encryption only with small example '    d'=&gt;'140&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase name="Test encryption only with small example '    z'=&gt;'195&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase name="Test encryption only with small example '    f    g'=&gt;'41&#10;11&#10;'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption only with small example '#text'=&gt;'#result'(RSASpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase name="Test decryption only with small example '1&#10;' =&gt; '    a'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test decryption only with small example '32&#10;' =&gt; '    b'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test decryption only with small example '22&#10;' =&gt; '    c'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test decryption only with small example '140&#10;' =&gt; '    d'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test decryption only with small example '195&#10;' =&gt; '    z'" classname="dk.sdu.imada.rsa.RSASpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test decryption only with small example '41&#10;11&#10;' =&gt; '    f    g'" classname="dk.sdu.imada.rsa.RSASpec" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.RSASpec.Test decryption only with small example '#text' =&gt; '#result'(RSASpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test encryption and decryption" classname="dk.sdu.imada.rsa.RSASpec" time="0.388">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.selectE(RSA.java:58)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:42)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:22)
+	at dk.sdu.imada.rsa.RSASpec.Test encryption and decryption(RSASpec.groovy:62)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

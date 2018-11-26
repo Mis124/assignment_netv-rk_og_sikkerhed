@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dk.sdu.imada.rsa.AlphabetConversionSpec" tests="16" skipped="0" failures="11" errors="0" timestamp="2018-11-26T09:31:45" hostname="DESKTOP-GLQNHV9" time="0.319">
+  <properties/>
+  <testcase name="Check that numberToString converts correctly '10793358' =&gt; 'this '" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.218">
+    <failure message="Condition not satisfied:&#10;&#10;AlphabetConversion.numberToString(new BigInteger(input) ) == output&#10;                   |              |              |        |  |&#10;                   null           10793358       10793358 |  this &#10;                                                          false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+AlphabetConversion.numberToString(new BigInteger(input) ) == output
+                   |              |              |        |  |
+                   null           10793358       10793358 |  this 
+                                                          false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that numberToString converts correctly '#input' =&gt; '#output'(AlphabetConversionSpec.groovy:10)
+</failure>
+  </testcase>
+  <testcase name="Check that numberToString converts correctly '0' =&gt; '     '" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.003">
+    <failure message="Condition not satisfied:&#10;&#10;AlphabetConversion.numberToString(new BigInteger(input) ) == output&#10;                   |              |              |        |  |&#10;                   null           0              0        |       &#10;                                                          false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+AlphabetConversion.numberToString(new BigInteger(input) ) == output
+                   |              |              |        |  |
+                   null           0              0        |       
+                                                          false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that numberToString converts correctly '#input' =&gt; '#output'(AlphabetConversionSpec.groovy:10)
+</failure>
+  </testcase>
+  <testcase name="Check that numberToString converts correctly '7553805' =&gt; 'netwo'" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.002">
+    <failure message="Condition not satisfied:&#10;&#10;AlphabetConversion.numberToString(new BigInteger(input) ) == output&#10;                   |              |              |        |  |&#10;                   null           7553805        7553805  |  netwo&#10;                                                          false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+AlphabetConversion.numberToString(new BigInteger(input) ) == output
+                   |              |              |        |  |
+                   null           7553805        7553805  |  netwo
+                                                          false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that numberToString converts correctly '#input' =&gt; '#output'(AlphabetConversionSpec.groovy:10)
+</failure>
+  </testcase>
+  <testcase name="Check that stringToNumber converts correctly '     ' =&gt; 0" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.006">
+    <failure message="Condition not satisfied:&#10;&#10;AlphabetConversion.stringToNumber( input ) == output&#10;                   |               |       |  |&#10;                   null                    |  0&#10;                                           false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+AlphabetConversion.stringToNumber( input ) == output
+                   |               |       |  |
+                   null                    |  0
+                                           false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that stringToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:23)
+</failure>
+  </testcase>
+  <testcase name="Check that stringToNumber converts correctly 'this ' =&gt; 10793358" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.001">
+    <failure message="Condition not satisfied:&#10;&#10;AlphabetConversion.stringToNumber( input ) == output&#10;                   |               |       |  |&#10;                   null            this    |  10793358&#10;                                           false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+AlphabetConversion.stringToNumber( input ) == output
+                   |               |       |  |
+                   null            this    |  10793358
+                                           false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that stringToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:23)
+</failure>
+  </testcase>
+  <testcase name="Check that stringToNumber converts correctly 'netwo' =&gt; 7553805" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.01">
+    <failure message="Condition not satisfied:&#10;&#10;AlphabetConversion.stringToNumber( input ) == output&#10;                   |               |       |  |&#10;                   null            netwo   |  7553805&#10;                                           false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+AlphabetConversion.stringToNumber( input ) == output
+                   |               |       |  |
+                   null            netwo   |  7553805
+                                           false
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check that stringToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:23)
+</failure>
+  </testcase>
+  <testcase name="Check charToNumber converts correctly 'a' =&gt; 1" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.011">
+    <failure message="Condition failed with Exception:&#10;&#10;AlphabetConversion.charToNumber( input.charAt(0) ) == output&#10;                   |             |     |&#10;                   |             a     a&#10;                   java.lang.NumberFormatException: For input string: &quot; 1&quot;&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError">Condition failed with Exception:
+
+AlphabetConversion.charToNumber( input.charAt(0) ) == output
+                   |             |     |
+                   |             a     a
+                   java.lang.NumberFormatException: For input string: &quot; 1&quot;
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check charToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:36)
+Caused by: java.lang.NumberFormatException: For input string: &quot; 1&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:470)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:606)
+	at dk.sdu.imada.rsa.AlphabetConversion.charToNumber(AlphabetConversion.java:22)
+	... 1 more
+</failure>
+  </testcase>
+  <testcase name="Check charToNumber converts correctly 'b' =&gt; 2" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.006">
+    <failure message="Condition failed with Exception:&#10;&#10;AlphabetConversion.charToNumber( input.charAt(0) ) == output&#10;                   |             |     |&#10;                   |             b     b&#10;                   java.lang.NumberFormatException: For input string: &quot; 2&quot;&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError">Condition failed with Exception:
+
+AlphabetConversion.charToNumber( input.charAt(0) ) == output
+                   |             |     |
+                   |             b     b
+                   java.lang.NumberFormatException: For input string: &quot; 2&quot;
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check charToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:36)
+Caused by: java.lang.NumberFormatException: For input string: &quot; 2&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:470)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:606)
+	at dk.sdu.imada.rsa.AlphabetConversion.charToNumber(AlphabetConversion.java:22)
+	... 1 more
+</failure>
+  </testcase>
+  <testcase name="Check charToNumber converts correctly 'z' =&gt; 26" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.004">
+    <failure message="Condition failed with Exception:&#10;&#10;AlphabetConversion.charToNumber( input.charAt(0) ) == output&#10;                   |             |     |&#10;                   |             z     z&#10;                   java.lang.NumberFormatException: For input string: &quot; 26&quot;&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError">Condition failed with Exception:
+
+AlphabetConversion.charToNumber( input.charAt(0) ) == output
+                   |             |     |
+                   |             z     z
+                   java.lang.NumberFormatException: For input string: &quot; 26&quot;
+
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Check charToNumber converts correctly '#input' =&gt; #output(AlphabetConversionSpec.groovy:36)
+Caused by: java.lang.NumberFormatException: For input string: &quot; 26&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:470)
+	at java.math.BigInteger.&lt;init&gt;(BigInteger.java:606)
+	at dk.sdu.imada.rsa.AlphabetConversion.charToNumber(AlphabetConversion.java:22)
+	... 1 more
+</failure>
+  </testcase>
+  <testcase name="Check charToNumber converts correctly ' ' =&gt; 0" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.038"/>
+  <testcase name="Check charToNumber converts correctly '$' =&gt; 0" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.0"/>
+  <testcase name="Check numberToChar converts correctly '0' =&gt; ' '" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.0"/>
+  <testcase name="Check numberToChar converts correctly '1' =&gt; 'a'" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.0"/>
+  <testcase name="Check numberToChar converts correctly '26' =&gt; 'z'" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.001"/>
+  <testcase name="Test numberToChar throws exeption for erroneous input: -1" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.006">
+    <failure message="Expected exception of type 'java.lang.IllegalArgumentException', but no exception was thrown" type="org.spockframework.runtime.WrongExceptionThrownError">Expected exception of type 'java.lang.IllegalArgumentException', but no exception was thrown
+	at org.spockframework.lang.SpecInternals.checkExceptionThrown(SpecInternals.java:80)
+	at org.spockframework.lang.SpecInternals.thrownImpl(SpecInternals.java:67)
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Test numberToChar throws exeption for erroneous input: #input(AlphabetConversionSpec.groovy:65)
+</failure>
+  </testcase>
+  <testcase name="Test numberToChar throws exeption for erroneous input: 27" classname="dk.sdu.imada.rsa.AlphabetConversionSpec" time="0.001">
+    <failure message="Expected exception of type 'java.lang.IllegalArgumentException', but no exception was thrown" type="org.spockframework.runtime.WrongExceptionThrownError">Expected exception of type 'java.lang.IllegalArgumentException', but no exception was thrown
+	at org.spockframework.lang.SpecInternals.checkExceptionThrown(SpecInternals.java:80)
+	at org.spockframework.lang.SpecInternals.thrownImpl(SpecInternals.java:67)
+	at dk.sdu.imada.rsa.AlphabetConversionSpec.Test numberToChar throws exeption for erroneous input: #input(AlphabetConversionSpec.groovy:65)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

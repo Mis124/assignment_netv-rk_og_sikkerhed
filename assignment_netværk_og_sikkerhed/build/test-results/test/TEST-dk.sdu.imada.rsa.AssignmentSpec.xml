@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dk.sdu.imada.rsa.AssignmentSpec" tests="3" skipped="0" failures="3" errors="0" timestamp="2018-11-26T09:31:45" hostname="DESKTOP-GLQNHV9" time="0.014">
+  <properties/>
+  <testcase name="test euclidean algorithm" classname="dk.sdu.imada.rsa.AssignmentSpec" time="0.007">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.AssignmentSpec.test euclidean algorithm(AssignmentSpec.groovy:13)
+</failure>
+  </testcase>
+  <testcase name="Test encryption" classname="dk.sdu.imada.rsa.AssignmentSpec" time="0.006">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.AssignmentSpec.Test encryption(AssignmentSpec.groovy:29)
+</failure>
+  </testcase>
+  <testcase name="Test decryption" classname="dk.sdu.imada.rsa.AssignmentSpec" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at dk.sdu.imada.rsa.RSA.isValidE(RSA.java:53)
+	at dk.sdu.imada.rsa.RSA.setUpNumbers(RSA.java:44)
+	at dk.sdu.imada.rsa.RSA.&lt;init&gt;(RSA.java:32)
+	at dk.sdu.imada.rsa.AssignmentSpec.Test decryption(AssignmentSpec.groovy:45)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
